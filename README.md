@@ -41,7 +41,8 @@ Dostava urađenog zadatka: Github Repository link putem email-a
 
 1. Clone repository
 2. Run `pnpm install`
-3. There is a `run.sh` script that will build and run the docker image from docker-compose.yml, also it will run the migrations and seed the database with initial user data.
+3. Copy `.env.example` and rename it to `.env`
+4. There is a `run.sh` script that will build and run the docker image from docker-compose.yml, also it will run the migrations and seed the database with initial user data.
 
 ### Note
 
