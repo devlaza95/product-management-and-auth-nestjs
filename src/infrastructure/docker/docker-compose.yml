@@ -1,0 +1,22 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    container_name: product-management-db
+    restart: always
+    environment:
+      POSTGRES_USER: product-management
+      POSTGRES_PASSWORD: product-management
+    ports:
+      - 5435:5432
+  redis:
+    image: redis
+    container_name: product-management-redis
+    ports:
+      - '6379:6379'
+    restart: always
+  redisinsight:
+    image: redislabs/redisinsight
+    container_name: product-management-redis-insights
+    ports:
+      - '8001:8001'
